@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* body */
+body{
+    position:relative;
+    max-width: 3840px;
+    height: 2160px;
+    margin:0 auto;
+    background-image: url("../img/background_2.jpg");
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed;
+}
+
+/*------------------------------*/
+/* header */
+header{
+    position:relative;
+    display: block;
+    max-width: 800px;
+    height:88%;
+    margin: 100px auto;
+    background: #fad390;
+}
+/* partie pseudo */
+.pseudo{
+    position: relative;
+    display: block;
+    margin:0 auto;
+    text-align: center;
+}
+.pseudo div {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*------------------------------*/
+/* partie container */
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top:20px;
+}
+/*---------------*/
+/* partie de gauche du container */
+.container .container-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 0 0 300px;
+    gap:10px;
+    font-size: 1.2em;
+    font-family: sans-serif;
+}
+/* sous partie house */
+.container .container-left .house{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:10px;
+    margin-left: 10px;
+    align-items: center;
+    border: 3px dashed #eb2f06;
+    border-radius: 10px;
+    padding: 10px;
+}
+/* sous partie phone */
+.container .container-left .phone{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:10px;
+    margin-left: 10px;
+    align-items: center;
+    border: 3px dashed #eb2f06;
+    border-radius: 10px;
+    padding: 10px;
+}
+/*---------------*/
+/* partie du centre du container */
+.container .skin img{
+    height: 10em;
+    border: 5px dashed #eb2f06;
+    border-radius: 50%;
+}
+/*---------------*/
+/* partie de droite du container */
+.container .container-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 0 0 300px;
+    gap:10px;
+    font-size: 1.2em;
+    font-family: sans-serif;
+}
+/* sous partie mail */
+.container .container-right .mail{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:10px;
+    margin-left: 10px;
+    align-items: center;
+    border: 3px dashed #eb2f06;
+    border-radius: 10px;
+    padding: 10px;
+}
+/* sous partie discord */
+.container .container-right .discord{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:10px;
+    margin-left: 10px;
+    align-items: center;
+    border: 3px dashed #eb2f06;
+    border-radius: 10px;
+    padding: 10px;
+}
+/* sous partie other-link */
+.container .container-right .other-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:10px;
+    margin-left: 10px;
+    align-items: center;
+    border: 3px dashed #eb2f06;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+/*------------------------------*/
+/* partie corps */
+.container-corps {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+/*---------------*/
+/* partie de gauche du corps */
+.container-corps .corps-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 0 0 300px;
+    gap:10px;
+    font-size: 1em;
+    font-family: sans-serif;
+    border: 3px solid #eb2f06;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+/* sous partie a propos de moi */
+.container-corps .corps-left .information, .container-corps .corps-left .other{
+    text-align: justify;
+    padding: 10px;
+}
+.container-corps .corps-left .information div:hover{
+    color: rgba(0,0,0,0.3);
+    position: relative;
+    background-image:url("../img/vegapunk.png");
+    background-size:auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s;
+}
+/* sous partie langues et compéteces en grid */
+.container-corps .corps-left .grid{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: auto;
+    gap:10px;
+    align-items: center;
+}
+.container-corps .corps-left .grid .language-name,
+.container-corps .corps-left .grid .skills-name,
+.container-corps .corps-left .grid .skills-level span{
+    font-weight: bold;
+}
+/*---------------*/
+/* tous les h3 corps gauche & droit */
+.container-corps h3{text-align: center;padding: 10px}
+/*---------------*/
+/* partie de droite du corps */
+.container-corps .corps-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 0 0 400px;
+    gap:10px;
+    font-size: 1em;
+    font-family: sans-serif;
+    border: 3px solid #eb2f06;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+/* sous partie formation */
+.container-corps .corps-right .formation .formation-name{
+    font-weight: bold;
+    padding: 5px;
+}
+.container-corps .corps-right .formation .subtext{
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+/* sous partie experience */
+.container-corps .corps-right .experience .experience-name{
+    padding: 5px;
+    padding-bottom: 15px;
+}
+.container-corps .corps-right .experience span,
+.container-corps .corps-right .experience .experience-job{
+    font-weight: bold;
+    padding: 5px;
+}
+.container-corps .corps-right .experience .experience-description{
+    padding-left: 10px;
+}
+.container-corps .corps-right .experience .experience-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 0 0 auto;
+    gap:5px;
+}
+.container-corps .corps-right .experience .experience-flex .first-li{
+    padding-left: 10px;
+}
+.container-corps .corps-right .experience .experience-flex .second-li{
+    padding-left: 25px;
+}
